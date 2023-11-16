@@ -1,44 +1,45 @@
 baseURL = 'http://example.com/'
-languageCode = 'en'
+# languageCode = 'en'
+languageCode = 'pt-br'
 # languageCode = 'zh-CN'
 theme = "JuiceBar"
-title = "JuiceBar"
+title = "BotecoDev"
 
 [params]
-author = "hotjuicew"
-description = "My site description"
+author = "L3onix"
+description = "Blog pessoal"
 authorImage = "/images/profile.jpg"
 paginate = 5
 
-Title = "JuiceBar"
-content = "I'm JuiceBar, nice to meet you(ˊ˘ˋ*)♡"
-imageUrl = "/images/avatar.jpg"
+Title = "BotecoDev"
+content = "Meu nome é Leonardo, bem vindo ao BotecoDev!   "
+imageUrl = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&v=beta&t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA"
 # To add a new social icon (More social icons can be found in JuiceBar\layouts\partials\svg.html.)
 [[params.social]]
 name = "Github"
-url = "https://github.com/hotjuicew"
-[[params.social]]
-name = "telegram"
-url = "https://t.me/Hotjuice"
-[[params.social]]
-name = "twitter"
-url = "https://twitter.com/hotjuicee"
+url = "https://github.com/l3onix"
+# [[params.social]]
+# name = "telegram"
+# url = "https://t.me/Hotjuice"
+# [[params.social]]
+# name = "twitter"
+# url = "https://twitter.com/hotjuicee"
 [[params.social]]
 name = "email"
-url = "mailto:imjiaying@outlook.com"
+url = "mailto:leonardo.fm00@gmail.com"
 
 [taxonomies]
-category = "categories"
+category = categories"
 
 # To add a new navigation link
 [[menu.main]]
-name = "About"
+name = "Sobre"
 url = "/about"
 [[menu.main]]
 name = "Blog"
 url = "/post"
 [[menu.main]]
-name = "Categories"
+name = "Categorias"
 url = "/categories"
 
 [params.giscus]
