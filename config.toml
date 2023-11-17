@@ -6,9 +6,9 @@ theme = "JuiceBar"
 title = "BotecoDev"
 
 [params]
-author = "L3onix"
+author = "Leo Facundes"
 description = "Blog pessoal"
-authorImage = "/images/profile.jpg"
+authorImage = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&v=beta&t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA"
 paginate = 5
 
 Title = "BotecoDev"
@@ -18,15 +18,15 @@ imageUrl = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displa
 [[params.social]]
 name = "Github"
 url = "https://github.com/l3onix"
+[[params.social]]
+name = "email"
+url = "mailto:leonardo.fm00@gmail.com"
 # [[params.social]]
 # name = "telegram"
 # url = "https://t.me/Hotjuice"
 # [[params.social]]
 # name = "twitter"
 # url = "https://twitter.com/hotjuicee"
-[[params.social]]
-name = "email"
-url = "mailto:leonardo.fm00@gmail.com"
 
 [taxonomies]
 category = "categories"
