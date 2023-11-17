@@ -29,7 +29,7 @@ name = "email"
 url = "mailto:leonardo.fm00@gmail.com"
 
 [taxonomies]
-category = categories"
+category = "categories"
 
 # To add a new navigation link
 [[menu.main]]
