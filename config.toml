@@ -3,7 +3,7 @@ baseURL = 'https://l3onix.github.io/'
 languageCode = 'pt-br'
 # languageCode = 'zh-CN'
 theme = "JuiceBar"
-title = "BotecoDev"
+title = "Léo Diário"
 
 [params]
 author = "Leo Facundes"
@@ -11,8 +11,8 @@ description = "Blog pessoal"
 authorImage = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&v=beta&t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA"
 paginate = 5
 
-Title = "BotecoDev"
-content = "Meu nome é Leonardo, bem vindo ao BotecoDev!   "
+Title = "Léo Diário"
+content = "Meu nome é Leonardo, bem vindo ao Léo Diário!   "
 imageUrl = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&v=beta&t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA"
 # To add a new social icon (More social icons can be found in JuiceBar\layouts\partials\svg.html.)
 [[params.social]]

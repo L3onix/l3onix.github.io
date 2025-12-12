@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BotecoDev</title>
+    <title>Léo Diário</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on BotecoDev</description>
+    <description>Recent content on Léo Diário</description>
     <generator>Hugo</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 28 Mar 2024 00:50:10 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 00:18:39 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nomes não importam!</title>
+      <link>http://localhost:1313/post/20251212-nomes/</link>
+      <pubDate>Fri, 12 Dec 2025 00:18:39 -0300</pubDate>
+      <guid>http://localhost:1313/post/20251212-nomes/</guid>
+      <description>&lt;p&gt;É impressionante a minha capacidade de me incomodar com os nomes que dou a meus projetos.&#xA;Alguns deles eu até gosto e tenho orgulho, mas com a maioria não é assim, sempre volta aquela&#xA;vontade de renomear aquilo que eu já dei nome.&lt;/p&gt;&#xA;&lt;p&gt;Isso é uma mania complicada, agora mesmo eu já estou pensando em renomear esse blog, e ele já&#xA;foi renomeado antes, parece muito com uma outra mania que me persegue a algum tempo. Durante&#xA;a faculdade eu adquiri um pequeno defeito genético, a insuportável vontade de formatar meus&#xA;computador. Naquela época eu já usava linux a muito tempo, mas durante o curso eu fui mais&#xA;&amp;ldquo;incentivado&amp;rdquo; a me manter nesses sistemas, eu já tinha conhecimento e era muito mais fácil&#xA;usar linux pra estudar. Hoje sou um viciado em tratamento e estou estacionado em um sistema&#xA;a quase 1 ano. Volta e meia eu penso em formatar mas pensar em reconfigurar meu ambiente de&#xA;trabalho me cansa, e achei outras coisas para refazer sempre que esse desejo de recomeçar do&#xA;zero aparece.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Primeiras rotas (Splinter #2)</title>
       <link>http://localhost:1313/post/20240328-splinterpt2/</link>
