@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>BotecoDev</title>
+    <meta name="description"
+        content="Blog pessoal">
+    <link rel="canonical" href="http://localhost:1313/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    
+    <link rel="stylesheet" href="http://localhost:1313/scss/style.min.29f31bb29bdb5e37c0bc61899736de5ec9721bdd858d5baf814d33f9fec88cbb.css">
+
+    <meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="BotecoDev">
+  <meta property="og:title" content="BotecoDev">
+  <meta property="og:description" content="Blog pessoal">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="website">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BotecoDev">
+  <meta name="twitter:description" content="Blog pessoal">
+
+    
+
+</head>
+<body><nav class="navbar is-light" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" title="home" class="navbar-item">
+                <span class="logo">
+                    <h1>BotecoDev</h1>
+                </span>
+            </a>
+
+            
+            <a id="theme-toggle" class="theme-toggle" href="#">
+                <img src="http://localhost:1313/svg/sun.svg" alt="sun icon" class="theme-icon" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+                <a href="/post" class="navbar-item">Blog</a>
+                
+                <a href="/categories" class="navbar-item">Categorias</a>
+                
+                <a href="/about" class="navbar-item">Sobre</a>
+                
+            </div>
+
+        </div>
+        <div class="search">
+            <div id="fastSearch">
+                <input id="searchInput" tabindex="0" placeholder="Search..">
+                <ul id="searchResults">
+
+                </ul>
+            </div>
+            <a id="search-btn" style="display: inline-block;" href="# ">
+                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+            </a>
+        </div>
+
+        <script src="/js/fuse.min.js"></script> 
+        <script src="/js/fastsearch.js"></script>
+
+    </div>
+</nav>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var burger = document.querySelector('.navbar-burger');
+        burger.addEventListener('click', function() {
+            burger.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        });
+    });
+
+    
+    function setTheme(theme) {
+        let body = document.body;
+        let themeIcon = document.querySelector(".theme-icon");
+        if (theme === "dark") {
+            body.classList.add("dark-mode");
+            themeIcon.src = "http:\/\/localhost:1313\/svg/moon.svg";
+            themeIcon.alt = "moon icon";
+        } else {
+            body.classList.remove("dark-mode");
+            themeIcon.src = "http:\/\/localhost:1313\/svg/sun.svg";
+            themeIcon.alt = "sun icon";
+        }
+        
+        localStorage.setItem("theme", theme);
+    }
+
+    
+    let theme = localStorage.getItem("theme") || "light";
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+        
+        setTheme('dark');
+
+    } else {
+        
+        setTheme('light');
+    }
+    setTheme(theme);
+
+    
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+        if (theme === "light") {
+            theme = "dark";
+        } else {
+            theme = "light";
+        }
+        setTheme(theme);
+    });
+
+
+
+</script>
+
+</header><main>
+<article>
+    <div class="is-centered">
+            <div class="title subtitle heading is-6">
+                <div id="home-box" >
+                            
+                            <div class="avatar-container">
+                                <img src="https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&amp;v=beta&amp;t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA" class="author-avatar">
+
+                            </div>
+                            
+
+
+
+                        <h1 id="home-title" class="title is-1 ">BotecoDev</h1>
+                    <div class="description column content typewriter-effect">
+                        <div class="text" id="typewriter-text"> Meu nome é Leonardo, bem vindo ao BotecoDev!   </div>
+
+                    </div>
+                    <script>
+                        const typeWriter = document.getElementById('typewriter-text');
+                        typeWriter.style.setProperty('--characters', typeWriter.innerHTML.length);
+                    </script>
+
+                    <div class="social-icon">
+
+                        
+                        <a href="https://github.com/l3onix" title="Github"><span class="change-color icon">
+                                <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+                            </span></a>
+                        
+                        <a href="mailto:leonardo.fm00@gmail.com" title="email"><span class="change-color icon">
+                                <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+                            </span></a>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+    </div></article>
+<div class="summary">
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/post/20240328-splinterpt2/">Primeiras rotas (Splinter #2)</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          <p>Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo
+<a href="https://www.mongodb.com/developer/languages/php/laravel-mongodb-tutorial/">tutorial</a> da semana passada.
+Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado
+vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o <em>model</em>
+QuestionMongoDB (os models que vão utilizar o MongoDB vão ter esse padrão de nome). Aqui já
+tem algumas alterações pra serem feitas, partindo do padrão criado pelo artisan, eu mudo
+a classe <em>model</em> (para a classe específica da biblioteca <strong>laravel-mogodb</strong>), e crio o variável
+<em>connection</em>, ela serve pra selecionar explicitamente qual conexão com o banco de dados deve
+ser utilizado nesse <em>model</em> (não detalhei isso no post anterior, mas no arquivo de configurações
+de bancos de dados do laravel eu adicionei a opção para o mongodb), também adicionei a variável
+<em>fillable</em> para definir os campos do &ldquo;tabela&rdquo; de questões, por enquanto estou carregando uma
+apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em
+questões reais.</p>
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2024-03-28 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/post/20240311-splinterpt1/">Ressuscitando velhos projetos (Splinter #1)</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          <p>Hoje eu decidi fuçar em velhos projetos. O Splinter é um projeto antigo de faculdade, a ideia é básica,
+eu queria criar um sistema pra quebrar o ENEM, ou qualquer outro tipo de prova semelhante. Para executar
+esse projeto macabro eu queria criar um plataforma online, com as questões edições passadas das provas,
+e os usuários iriam submeter tutoriais de como chegar a resposta correta das questões. Até aí tudo certo,
+acredito que já existam plataformas semelhantes, mas para conseguir alcançar meu objetivo eu iria
+adicionar um sistema de ranking entre as soluções, baseado nas avaliações dos usuários, dessa forma
+eu conseguiria, teoricamente, os melhores métodos para responder as questões do ENEM. Na época
+conseguimos entregar uma versão beta, mas ainda não tinha sistema de ranking. Então vou reescrever
+ele do zero e documentar o processo de desenvolvimento aqui.</p>
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2024-03-11 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+    <hr>
+<section class="pagination" >
+    
+    <label class="pag-link">Page 1 of 1</label>
+    
+</section>
+
+</div>
+
+        </main><footer class="footer">
+    <div class="content has-text-centered">
+    <span>&copy; 2025 <a href="http://localhost:1313/">BotecoDev</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
+        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
+    </span>
+    </div>
+  </footer></body>
+</html>
+

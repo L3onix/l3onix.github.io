@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Sobre | BotecoDev</title>
+    <meta name="description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio elit, maximus vitae massa ac, finibus lobortis elit. Cras imperdiet mauris sit amet enim porttitor, eget vehicula sem malesuada. Morbi congue leo est, ac sodales augue venenatis in. Nulla pellentesque dictum turpis, ut volutpat quam tristique sed. Sed feugiat, est ac congue maximus, turpis est viverra magna, non ornare eros ligula eget urna. Donec auctor vestibulum lorem, nec volutpat risus iaculis non. Quisque tempus blandit dolor, ac consequat libero consectetur sed. In sodales augue at turpis accumsan, vitae blandit neque accumsan. Sed vulputate, risus eget euismod efficitur, ligula arcu vulputate turpis, a tempus turpis dolor eget turpis. Sed vitae elementum libero.">
+    <link rel="canonical" href="http://localhost:1313/about/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    
+    <link rel="stylesheet" href="http://localhost:1313/scss/style.min.29f31bb29bdb5e37c0bc61899736de5ec9721bdd858d5baf814d33f9fec88cbb.css">
+
+    <meta property="og:url" content="http://localhost:1313/about/">
+  <meta property="og:site_name" content="BotecoDev">
+  <meta property="og:title" content="Sobre">
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio elit, maximus vitae massa ac, finibus lobortis elit. Cras imperdiet mauris sit amet enim porttitor, eget vehicula sem malesuada. Morbi congue leo est, ac sodales augue venenatis in. Nulla pellentesque dictum turpis, ut volutpat quam tristique sed. Sed feugiat, est ac congue maximus, turpis est viverra magna, non ornare eros ligula eget urna. Donec auctor vestibulum lorem, nec volutpat risus iaculis non. Quisque tempus blandit dolor, ac consequat libero consectetur sed. In sodales augue at turpis accumsan, vitae blandit neque accumsan. Sed vulputate, risus eget euismod efficitur, ligula arcu vulputate turpis, a tempus turpis dolor eget turpis. Sed vitae elementum libero.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2023-11-16T02:24:48-03:00">
+    <meta property="article:modified_time" content="2023-11-16T02:24:48-03:00">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sobre">
+  <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio elit, maximus vitae massa ac, finibus lobortis elit. Cras imperdiet mauris sit amet enim porttitor, eget vehicula sem malesuada. Morbi congue leo est, ac sodales augue venenatis in. Nulla pellentesque dictum turpis, ut volutpat quam tristique sed. Sed feugiat, est ac congue maximus, turpis est viverra magna, non ornare eros ligula eget urna. Donec auctor vestibulum lorem, nec volutpat risus iaculis non. Quisque tempus blandit dolor, ac consequat libero consectetur sed. In sodales augue at turpis accumsan, vitae blandit neque accumsan. Sed vulputate, risus eget euismod efficitur, ligula arcu vulputate turpis, a tempus turpis dolor eget turpis. Sed vitae elementum libero.">
+
+    
+
+</head>
+<body><nav class="navbar is-light" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" title="home" class="navbar-item">
+                <span class="logo">
+                    <h1>BotecoDev</h1>
+                </span>
+            </a>
+
+            
+            <a id="theme-toggle" class="theme-toggle" href="#">
+                <img src="http://localhost:1313/svg/sun.svg" alt="sun icon" class="theme-icon" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+                <a href="/post" class="navbar-item">Blog</a>
+                
+                <a href="/categories" class="navbar-item">Categorias</a>
+                
+                <a href="/about" class="navbar-item">Sobre</a>
+                
+            </div>
+
+        </div>
+        <div class="search">
+            <div id="fastSearch">
+                <input id="searchInput" tabindex="0" placeholder="Search..">
+                <ul id="searchResults">
+
+                </ul>
+            </div>
+            <a id="search-btn" style="display: inline-block;" href="# ">
+                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+            </a>
+        </div>
+
+        <script src="/js/fuse.min.js"></script> 
+        <script src="/js/fastsearch.js"></script>
+
+    </div>
+</nav>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var burger = document.querySelector('.navbar-burger');
+        burger.addEventListener('click', function() {
+            burger.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        });
+    });
+
+    
+    function setTheme(theme) {
+        let body = document.body;
+        let themeIcon = document.querySelector(".theme-icon");
+        if (theme === "dark") {
+            body.classList.add("dark-mode");
+            themeIcon.src = "http:\/\/localhost:1313\/svg/moon.svg";
+            themeIcon.alt = "moon icon";
+        } else {
+            body.classList.remove("dark-mode");
+            themeIcon.src = "http:\/\/localhost:1313\/svg/sun.svg";
+            themeIcon.alt = "sun icon";
+        }
+        
+        localStorage.setItem("theme", theme);
+    }
+
+    
+    let theme = localStorage.getItem("theme") || "light";
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+        
+        setTheme('dark');
+
+    } else {
+        
+        setTheme('light');
+    }
+    setTheme(theme);
+
+    
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+        if (theme === "light") {
+            theme = "dark";
+        } else {
+            theme = "light";
+        }
+        setTheme(theme);
+    });
+
+
+
+</script>
+
+</header><main>
+<div class="single-container  is-centered">
+    <div class="archive">
+        <h1 class="title is-1">Sobre</h1>
+        <div class="content about-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio elit, maximus vitae massa ac, finibus lobortis elit. Cras imperdiet mauris sit amet enim porttitor, eget vehicula sem malesuada. Morbi congue leo est, ac sodales augue venenatis in. Nulla pellentesque dictum turpis, ut volutpat quam tristique sed. Sed feugiat, est ac congue maximus, turpis est viverra magna, non ornare eros ligula eget urna. Donec auctor vestibulum lorem, nec volutpat risus iaculis non. Quisque tempus blandit dolor, ac consequat libero consectetur sed. In sodales augue at turpis accumsan, vitae blandit neque accumsan. Sed vulputate, risus eget euismod efficitur, ligula arcu vulputate turpis, a tempus turpis dolor eget turpis. Sed vitae elementum libero.</p>
+<p>Duis porttitor congue enim, vitae mollis mauris vestibulum et. Morbi condimentum eget nunc sit amet rhoncus. Quisque metus dui, dapibus sit amet volutpat non, semper efficitur justo. Fusce varius, velit vel imperdiet mattis, massa mi rhoncus leo, eget viverra tellus nisi et mi. Integer et magna a lectus tempus condimentum eget sit amet diam. Aenean eleifend urna vitae quam aliquam, in auctor quam tincidunt. Morbi tempus pellentesque nunc, sed sollicitudin elit pretium a.</p>
+<p>Morbi mattis ligula at ligula rutrum ornare. Nulla facilisi. Cras pulvinar vulputate consequat. Donec vel quam non sapien accumsan euismod at non lorem. Suspendisse potenti. Nam ipsum lectus, cursus quis mauris non, interdum volutpat sem. In faucibus mi quis urna vulputate, quis feugiat nulla dapibus. Sed vel congue sem, id sagittis ex. Aenean tortor mi, gravida consectetur dolor et, vulputate euismod tellus.</p>
+<p>Suspendisse eu diam gravida, cursus erat id, pulvinar libero. Donec sapien nibh, ultricies sit amet urna nec, dictum viverra nisi. Nullam egestas eget lacus at maximus. Donec non dui eros. Quisque placerat justo orci, ut molestie tortor ornare sed. Sed maximus diam suscipit lectus finibus rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur vehicula lacus placerat erat lobortis tempor id eget dolor. Donec tempor, lacus at egestas sodales, lectus felis facilisis augue, quis sollicitudin mi massa sit amet turpis.</p>
+<p>Maecenas sodales orci augue, vel blandit ligula commodo sit amet. Mauris ultrices iaculis orci, a faucibus diam tristique eget. Aliquam pulvinar faucibus pretium. Integer id metus risus. Praesent eget ligula laoreet, sagittis lacus et, consectetur libero. Morbi eu libero tempus, tincidunt libero ut, accumsan metus. Vivamus molestie tempor hendrerit. Aliquam vel diam urna. Curabitur dictum diam id ipsum semper, nec luctus odio commodo. Nunc eu quam elit. Donec tellus elit, volutpat id dui nec, finibus condimentum augue. Donec ultricies dui massa, eu mollis sem feugiat non. Praesent imperdiet nibh sed sem sodales sodales. Nam vel enim blandit, ultrices leo id, accumsan elit. Sed a dui eget magna aliquet vulputate vel vel odio. Pellentesque id feugiat dui.</p>
+
+        </div>
+    </div>
+   
+</div>
+
+        </main><footer class="footer">
+    <div class="content has-text-centered">
+    <span>&copy; 2025 <a href="http://localhost:1313/">BotecoDev</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
+        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
+    </span>
+    </div>
+  </footer></body>
+</html>
+
