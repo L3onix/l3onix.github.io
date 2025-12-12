@@ -1,7 +1,7 @@
 +++
 title = 'Primeiramente'
 date = 2023-11-17T01:42:54-03:00
-draft = false
+draft = true
 +++
 Já deixando claro que esse blog não passa de um local para compartilhamento
 de minhas ideias mais esdrúxulas, sendo assim (*vicio linguístico de que*
