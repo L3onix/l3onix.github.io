@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Léo Diário</title>
     <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Léo Diário</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 12 Dec 2025 00:18:39 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,52 @@
       <link>http://localhost:1313/post/20251212-nomes/</link>
       <pubDate>Fri, 12 Dec 2025 00:18:39 -0300</pubDate>
       <guid>http://localhost:1313/post/20251212-nomes/</guid>
-      <description>&lt;p&gt;É impressionante a minha capacidade de me incomodar com os nomes que dou a meus projetos.&#xA;Alguns deles eu até gosto e tenho orgulho, mas com a maioria não é assim, sempre volta aquela&#xA;vontade de renomear aquilo que eu já dei nome.&lt;/p&gt;&#xA;&lt;p&gt;Isso é uma mania complicada, agora mesmo eu já estou pensando em renomear esse blog, e ele já&#xA;foi renomeado antes, parece muito com uma outra mania que me persegue a algum tempo. Durante&#xA;a faculdade eu adquiri um pequeno defeito genético, a insuportável vontade de formatar meus&#xA;computador. Naquela época eu já usava linux a muito tempo, mas durante o curso eu fui mais&#xA;&amp;ldquo;incentivado&amp;rdquo; a me manter nesses sistemas, eu já tinha conhecimento e era muito mais fácil&#xA;usar linux pra estudar. Hoje sou um viciado em tratamento e estou estacionado em um sistema&#xA;a quase 1 ano. Volta e meia eu penso em formatar mas pensar em reconfigurar meu ambiente de&#xA;trabalho me cansa, e achei outras coisas para refazer sempre que esse desejo de recomeçar do&#xA;zero aparece.&lt;/p&gt;</description>
+      <description>&lt;p&gt;É impressionante a minha capacidade de me incomodar com os nomes que dou a meus projetos.
+Alguns deles eu até gosto e tenho orgulho, mas com a maioria não é assim, sempre volta aquela
+vontade de renomear aquilo que eu já dei nome.&lt;/p&gt;
+&lt;p&gt;Isso é uma mania complicada, agora mesmo eu já estou pensando em renomear esse blog, e ele já
+foi renomeado antes, parece muito com uma outra mania que me persegue a algum tempo. Durante
+a faculdade eu adquiri um pequeno defeito genético, a insuportável vontade de formatar meus
+computador. Naquela época eu já usava linux a muito tempo, mas durante o curso eu fui mais
+&amp;ldquo;incentivado&amp;rdquo; a me manter nesses sistemas, eu já tinha conhecimento e era muito mais fácil
+usar linux pra estudar. Hoje sou um viciado em tratamento e estou estacionado em um sistema
+a quase 1 ano. Volta e meia eu penso em formatar mas pensar em reconfigurar meu ambiente de
+trabalho me cansa, e achei outras coisas para refazer sempre que esse desejo de recomeçar do
+zero aparece.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Primeiras rotas (Splinter #2)</title>
       <link>http://localhost:1313/post/20240328-splinterpt2/</link>
       <pubDate>Thu, 28 Mar 2024 00:50:10 -0300</pubDate>
       <guid>http://localhost:1313/post/20240328-splinterpt2/</guid>
-      <description>&lt;p&gt;Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo&#xA;&lt;a href=&#34;https://www.mongodb.com/developer/languages/php/laravel-mongodb-tutorial/&#34;&gt;tutorial&lt;/a&gt; da semana passada.&#xA;Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado&#xA;vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o &lt;em&gt;model&lt;/em&gt;&#xA;QuestionMongoDB (os models que vão utilizar o MongoDB vão ter esse padrão de nome). Aqui já&#xA;tem algumas alterações pra serem feitas, partindo do padrão criado pelo artisan, eu mudo&#xA;a classe &lt;em&gt;model&lt;/em&gt; (para a classe específica da biblioteca &lt;strong&gt;laravel-mogodb&lt;/strong&gt;), e crio o variável&#xA;&lt;em&gt;connection&lt;/em&gt;, ela serve pra selecionar explicitamente qual conexão com o banco de dados deve&#xA;ser utilizado nesse &lt;em&gt;model&lt;/em&gt; (não detalhei isso no post anterior, mas no arquivo de configurações&#xA;de bancos de dados do laravel eu adicionei a opção para o mongodb), também adicionei a variável&#xA;&lt;em&gt;fillable&lt;/em&gt; para definir os campos do &amp;ldquo;tabela&amp;rdquo; de questões, por enquanto estou carregando uma&#xA;apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em&#xA;questões reais.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo
+&lt;a href=&#34;https://www.mongodb.com/developer/languages/php/laravel-mongodb-tutorial/&#34;&gt;tutorial&lt;/a&gt; da semana passada.
+Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado
+vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o &lt;em&gt;model&lt;/em&gt;
+QuestionMongoDB (os models que vão utilizar o MongoDB vão ter esse padrão de nome). Aqui já
+tem algumas alterações pra serem feitas, partindo do padrão criado pelo artisan, eu mudo
+a classe &lt;em&gt;model&lt;/em&gt; (para a classe específica da biblioteca &lt;strong&gt;laravel-mogodb&lt;/strong&gt;), e crio o variável
+&lt;em&gt;connection&lt;/em&gt;, ela serve pra selecionar explicitamente qual conexão com o banco de dados deve
+ser utilizado nesse &lt;em&gt;model&lt;/em&gt; (não detalhei isso no post anterior, mas no arquivo de configurações
+de bancos de dados do laravel eu adicionei a opção para o mongodb), também adicionei a variável
+&lt;em&gt;fillable&lt;/em&gt; para definir os campos do &amp;ldquo;tabela&amp;rdquo; de questões, por enquanto estou carregando uma
+apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em
+questões reais.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ressuscitando velhos projetos (Splinter #1)</title>
       <link>http://localhost:1313/post/20240311-splinterpt1/</link>
       <pubDate>Mon, 11 Mar 2024 19:46:17 -0300</pubDate>
       <guid>http://localhost:1313/post/20240311-splinterpt1/</guid>
-      <description>&lt;p&gt;Hoje eu decidi fuçar em velhos projetos. O Splinter é um projeto antigo de faculdade, a ideia é básica,&#xA;eu queria criar um sistema pra quebrar o ENEM, ou qualquer outro tipo de prova semelhante. Para executar&#xA;esse projeto macabro eu queria criar um plataforma online, com as questões edições passadas das provas,&#xA;e os usuários iriam submeter tutoriais de como chegar a resposta correta das questões. Até aí tudo certo,&#xA;acredito que já existam plataformas semelhantes, mas para conseguir alcançar meu objetivo eu iria&#xA;adicionar um sistema de ranking entre as soluções, baseado nas avaliações dos usuários, dessa forma&#xA;eu conseguiria, teoricamente, os melhores métodos para responder as questões do ENEM. Na época&#xA;conseguimos entregar uma versão beta, mas ainda não tinha sistema de ranking. Então vou reescrever&#xA;ele do zero e documentar o processo de desenvolvimento aqui.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hoje eu decidi fuçar em velhos projetos. O Splinter é um projeto antigo de faculdade, a ideia é básica,
+eu queria criar um sistema pra quebrar o ENEM, ou qualquer outro tipo de prova semelhante. Para executar
+esse projeto macabro eu queria criar um plataforma online, com as questões edições passadas das provas,
+e os usuários iriam submeter tutoriais de como chegar a resposta correta das questões. Até aí tudo certo,
+acredito que já existam plataformas semelhantes, mas para conseguir alcançar meu objetivo eu iria
+adicionar um sistema de ranking entre as soluções, baseado nas avaliações dos usuários, dessa forma
+eu conseguiria, teoricamente, os melhores métodos para responder as questões do ENEM. Na época
+conseguimos entregar uma versão beta, mas ainda não tinha sistema de ranking. Então vou reescrever
+ele do zero e documentar o processo de desenvolvimento aqui.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,7 +2,7 @@ baseURL = 'https://l3onix.github.io/'
 # languageCode = 'en'
 languageCode = 'pt-br'
 # languageCode = 'zh-CN'
-theme = "JuiceBar"
+theme = "PaperMod"
 title = "Léo Diário"
 
 [params]
@@ -12,7 +12,7 @@ authorImage = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-dis
 paginate = 5
 
 Title = "Léo Diário"
-content = "Meu nome é Leonardo, bem vindo ao Léo Diário!   "
+content = "Apenas um local para eu despejar minhas ideias"
 imageUrl = "https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&v=beta&t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA"
 # To add a new social icon (More social icons can be found in JuiceBar\layouts\partials\svg.html.)
 [[params.social]]
@@ -32,15 +32,18 @@ url = "mailto:leonardo.fm00@gmail.com"
 category = "categories"
 
 # To add a new navigation link
-[[menu.main]]
-name = "Sobre"
-url = "/about"
+# [[menu.main]]
+# name = "Sobre"
+# url = "/about"
 [[menu.main]]
 name = "Blog"
 url = "/post"
+# [[menu.main]]
+# name = "Categorias"
+# url = "/categories"
 [[menu.main]]
-name = "Categorias"
-url = "/categories"
+name = "GitHub"
+url = "https://github.com/L3onix"
 
 [params.giscus]
 repo = "hotjuicew/blog"

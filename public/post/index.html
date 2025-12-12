@@ -1,201 +1,249 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Posts | Léo Diário</title>
-    <meta name="description"
-        content="Blog pessoal">
-    <link rel="canonical" href="http://localhost:1313/post/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    
-    <link rel="stylesheet" href="http://localhost:1313/scss/style.min.29f31bb29bdb5e37c0bc61899736de5ec9721bdd858d5baf814d33f9fec88cbb.css">
+<html lang="en" dir="auto" data-theme="auto">
 
-    <meta property="og:url" content="http://localhost:1313/post/">
-  <meta property="og:site_name" content="Léo Diário">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Blog pessoal">
-  <meta property="og:locale" content="pt_br">
-  <meta property="og:type" content="website">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Posts | Léo Diário</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - Léo Diário">
+<meta name="author" content="Leo Facundes">
+<link rel="canonical" href="http://localhost:1313/post/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/post/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Blog pessoal">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
 
-    
+            .list {
+                background: var(--theme);
+            }
 
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
 </head>
-<body><nav class="navbar is-light" role="navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" title="home" class="navbar-item">
-                <span class="logo">
-                    <h1>Léo Diário</h1>
-                </span>
-            </a>
-
-            
-            <a id="theme-toggle" class="theme-toggle" href="#">
-                <img src="http://localhost:1313/svg/sun.svg" alt="sun icon" class="theme-icon" />
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                
-                <a href="/post" class="navbar-item">Blog</a>
-                
-                <a href="/categories" class="navbar-item">Categorias</a>
-                
-                <a href="/about" class="navbar-item">Sobre</a>
-                
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Léo Diário (Alt + H)">Léo Diário</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
-
         </div>
-        <div class="search">
-            <div id="fastSearch">
-                <input id="searchInput" tabindex="0" placeholder="Search..">
-                <ul id="searchResults">
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post" title="Blog">
+                    <span class="active">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/L3onix" title="GitHub">
+                    <span>GitHub</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Posts
+  </h1>
+</header>
 
-                </ul>
-            </div>
-            <a id="search-btn" style="display: inline-block;" href="# ">
-                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
-            </a>
-        </div>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Nomes não importam!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>É impressionante a minha capacidade de me incomodar com os nomes que dou a meus projetos. Alguns deles eu até gosto e tenho orgulho, mas com a maioria não é assim, sempre volta aquela vontade de renomear aquilo que eu já dei nome.
+Isso é uma mania complicada, agora mesmo eu já estou pensando em renomear esse blog, e ele já foi renomeado antes, parece muito com uma outra mania que me persegue a algum tempo. Durante a faculdade eu adquiri um pequeno defeito genético, a insuportável vontade de formatar meus computador. Naquela época eu já usava linux a muito tempo, mas durante o curso eu fui mais “incentivado” a me manter nesses sistemas, eu já tinha conhecimento e era muito mais fácil usar linux pra estudar. Hoje sou um viciado em tratamento e estou estacionado em um sistema a quase 1 ano. Volta e meia eu penso em formatar mas pensar em reconfigurar meu ambiente de trabalho me cansa, e achei outras coisas para refazer sempre que esse desejo de recomeçar do zero aparece.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-12 00:18:39 -0300 -03'>December 12, 2025</span>&nbsp;·&nbsp;<span>Leo Facundes</span></footer>
+  <a class="entry-link" aria-label="post link to Nomes não importam!" href="http://localhost:1313/post/20251212-nomes/"></a>
+</article>
 
-        <script src="/js/fuse.min.js"></script> 
-        <script src="/js/fastsearch.js"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Primeiras rotas (Splinter #2)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo tutorial da semana passada. Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o model QuestionMongoDB (os models que vão utilizar o MongoDB vão ter esse padrão de nome). Aqui já tem algumas alterações pra serem feitas, partindo do padrão criado pelo artisan, eu mudo a classe model (para a classe específica da biblioteca laravel-mogodb), e crio o variável connection, ela serve pra selecionar explicitamente qual conexão com o banco de dados deve ser utilizado nesse model (não detalhei isso no post anterior, mas no arquivo de configurações de bancos de dados do laravel eu adicionei a opção para o mongodb), também adicionei a variável fillable para definir os campos do “tabela” de questões, por enquanto estou carregando uma apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em questões reais.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-28 00:50:10 -0300 -03'>March 28, 2024</span>&nbsp;·&nbsp;<span>Leo Facundes</span></footer>
+  <a class="entry-link" aria-label="post link to Primeiras rotas (Splinter #2)" href="http://localhost:1313/post/20240328-splinterpt2/"></a>
+</article>
 
-    </div>
-</nav>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ressuscitando velhos projetos (Splinter #1)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hoje eu decidi fuçar em velhos projetos. O Splinter é um projeto antigo de faculdade, a ideia é básica, eu queria criar um sistema pra quebrar o ENEM, ou qualquer outro tipo de prova semelhante. Para executar esse projeto macabro eu queria criar um plataforma online, com as questões edições passadas das provas, e os usuários iriam submeter tutoriais de como chegar a resposta correta das questões. Até aí tudo certo, acredito que já existam plataformas semelhantes, mas para conseguir alcançar meu objetivo eu iria adicionar um sistema de ranking entre as soluções, baseado nas avaliações dos usuários, dessa forma eu conseguiria, teoricamente, os melhores métodos para responder as questões do ENEM. Na época conseguimos entregar uma versão beta, mas ainda não tinha sistema de ranking. Então vou reescrever ele do zero e documentar o processo de desenvolvimento aqui.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-11 19:46:17 -0300 -03'>March 11, 2024</span>&nbsp;·&nbsp;<span>Leo Facundes</span></footer>
+  <a class="entry-link" aria-label="post link to Ressuscitando velhos projetos (Splinter #1)" href="http://localhost:1313/post/20240311-splinterpt1/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Léo Diário</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
 <script>
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        var burger = document.querySelector('.navbar-burger');
-        burger.addEventListener('click', function() {
-            burger.classList.toggle('is-active');
-            document.querySelector('.navbar-menu').classList.toggle('is-active');
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
         });
     });
 
-    
-    function setTheme(theme) {
-        let body = document.body;
-        let themeIcon = document.querySelector(".theme-icon");
-        if (theme === "dark") {
-            body.classList.add("dark-mode");
-            themeIcon.src = "http:\/\/localhost:1313\/svg/moon.svg";
-            themeIcon.alt = "moon icon";
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
         } else {
-            body.classList.remove("dark-mode");
-            themeIcon.src = "http:\/\/localhost:1313\/svg/sun.svg";
-            themeIcon.alt = "sun icon";
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
         }
-        
-        localStorage.setItem("theme", theme);
-    }
-
-    
-    let theme = localStorage.getItem("theme") || "light";
-    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (isDarkMode) {
-        
-        setTheme('dark');
-
-    } else {
-        
-        setTheme('light');
-    }
-    setTheme(theme);
-
-    
-    document.getElementById("theme-toggle").addEventListener("click", function() {
-        if (theme === "light") {
-            theme = "dark";
-        } else {
-            theme = "light";
-        }
-        setTheme(theme);
-    });
-
-
+    };
 
 </script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-</header><main>
-<div class="container">
-    <div class="section">
-        <div class="content">
-            <h1 class="h1-title">Cervejas tomadas anteriormente</h1>
-        </div>
-    </div>
-</div>
+</script>
+</body>
 
-    <div class="archive-container column is-centered">
-        <div class="archive">
-
-            
-            <h2 class="archive-title">2025</h2>
-            
-            
-
-            <article class="archive-item">
-                <a href="http://localhost:1313/post/20251212-nomes/" class="archive-item-link hover-underline-animation">Nomes não importam!</a>
-                <span class="archive-item-date">
-                    December 12, 2025
-                </span>
-
-            </article>
-            
-            
-            <h2 class="archive-title">2024</h2>
-            
-            
-
-            <article class="archive-item">
-                <a href="http://localhost:1313/post/20240328-splinterpt2/" class="archive-item-link hover-underline-animation">Primeiras rotas (Splinter #2)</a>
-                <span class="archive-item-date">
-                    March 28, 2024
-                </span>
-
-            </article>
-            
-            
-
-            <article class="archive-item">
-                <a href="http://localhost:1313/post/20240311-splinterpt1/" class="archive-item-link hover-underline-animation">Ressuscitando velhos projetos (Splinter #1)</a>
-                <span class="archive-item-date">
-                    March 11, 2024
-                </span>
-
-            </article>
-            
-            
-        </div>
-
-    </div>
-
-
-
-        </main><footer class="footer">
-    <div class="content has-text-centered">
-    <span>&copy; 2025 <a href="http://localhost:1313/">Léo Diário</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
-        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
-    </span>
-    </div>
-  </footer></body>
 </html>
-

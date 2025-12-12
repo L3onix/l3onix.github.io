@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Primeiras rotas (Splinter #2) | Léo Diário</title>
-    <meta name="description"
-        content="Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Primeiras rotas (Splinter #2) | Léo Diário</title>
+<meta name="keywords" content="">
+<meta name="description" content="Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo
 tutorial da semana passada.
 Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado
 vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o model
@@ -19,190 +20,131 @@ de bancos de dados do laravel eu adicionei a opção para o mongodb), também ad
 fillable para definir os campos do &ldquo;tabela&rdquo; de questões, por enquanto estou carregando uma
 apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em
 questões reais.">
-    <link rel="canonical" href="http://localhost:1313/post/20240328-splinterpt2/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    
-    <link rel="stylesheet" href="http://localhost:1313/scss/style.min.29f31bb29bdb5e37c0bc61899736de5ec9721bdd858d5baf814d33f9fec88cbb.css">
+<meta name="author" content="Leo Facundes">
+<link rel="canonical" href="http://localhost:1313/post/20240328-splinterpt2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/20240328-splinterpt2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <meta property="og:url" content="http://localhost:1313/post/20240328-splinterpt2/">
-  <meta property="og:site_name" content="Léo Diário">
-  <meta property="og:title" content="Primeiras rotas (Splinter #2)">
-  <meta property="og:description" content="Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo tutorial da semana passada. Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o model QuestionMongoDB (os models que vão utilizar o MongoDB vão ter esse padrão de nome). Aqui já tem algumas alterações pra serem feitas, partindo do padrão criado pelo artisan, eu mudo a classe model (para a classe específica da biblioteca laravel-mogodb), e crio o variável connection, ela serve pra selecionar explicitamente qual conexão com o banco de dados deve ser utilizado nesse model (não detalhei isso no post anterior, mas no arquivo de configurações de bancos de dados do laravel eu adicionei a opção para o mongodb), também adicionei a variável fillable para definir os campos do “tabela” de questões, por enquanto estou carregando uma apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em questões reais.">
-  <meta property="og:locale" content="pt_br">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2024-03-28T00:50:10-03:00">
-    <meta property="article:modified_time" content="2024-03-28T00:50:10-03:00">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
 
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Primeiras rotas (Splinter #2)">
-  <meta name="twitter:description" content="Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo tutorial da semana passada. Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o model QuestionMongoDB (os models que vão utilizar o MongoDB vão ter esse padrão de nome). Aqui já tem algumas alterações pra serem feitas, partindo do padrão criado pelo artisan, eu mudo a classe model (para a classe específica da biblioteca laravel-mogodb), e crio o variável connection, ela serve pra selecionar explicitamente qual conexão com o banco de dados deve ser utilizado nesse model (não detalhei isso no post anterior, mas no arquivo de configurações de bancos de dados do laravel eu adicionei a opção para o mongodb), também adicionei a variável fillable para definir os campos do “tabela” de questões, por enquanto estou carregando uma apenas uma estrutura básica, futuramente o esse model vai passar por um revisão baseada em questões reais.">
+            .list {
+                background: var(--theme);
+            }
 
-    
+            .toc {
+                background: var(--entry);
+            }
+        }
 
-</head>
-<body><nav class="navbar is-light" role="navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" title="home" class="navbar-item">
-                <span class="logo">
-                    <h1>Léo Diário</h1>
-                </span>
-            </a>
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
 
-            
-            <a id="theme-toggle" class="theme-toggle" href="#">
-                <img src="http://localhost:1313/svg/sun.svg" alt="sun icon" class="theme-icon" />
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                
-                <a href="/post" class="navbar-item">Blog</a>
-                
-                <a href="/categories" class="navbar-item">Categorias</a>
-                
-                <a href="/about" class="navbar-item">Sobre</a>
-                
-            </div>
-
-        </div>
-        <div class="search">
-            <div id="fastSearch">
-                <input id="searchInput" tabindex="0" placeholder="Search..">
-                <ul id="searchResults">
-
-                </ul>
-            </div>
-            <a id="search-btn" style="display: inline-block;" href="# ">
-                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
-            </a>
-        </div>
-
-        <script src="/js/fuse.min.js"></script> 
-        <script src="/js/fastsearch.js"></script>
-
-    </div>
-</nav>
-
+    </style>
+</noscript>
 <script>
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        var burger = document.querySelector('.navbar-burger');
-        burger.addEventListener('click', function() {
-            burger.classList.toggle('is-active');
-            document.querySelector('.navbar-menu').classList.toggle('is-active');
-        });
-    });
-
-    
-    function setTheme(theme) {
-        let body = document.body;
-        let themeIcon = document.querySelector(".theme-icon");
-        if (theme === "dark") {
-            body.classList.add("dark-mode");
-            themeIcon.src = "http:\/\/localhost:1313\/svg/moon.svg";
-            themeIcon.alt = "moon icon";
-        } else {
-            body.classList.remove("dark-mode");
-            themeIcon.src = "http:\/\/localhost:1313\/svg/sun.svg";
-            themeIcon.alt = "sun icon";
-        }
-        
-        localStorage.setItem("theme", theme);
-    }
-
-    
-    let theme = localStorage.getItem("theme") || "light";
-    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (isDarkMode) {
-        
-        setTheme('dark');
-
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
     } else {
-        
-        setTheme('light');
+        document.querySelector("html").dataset.theme = 'light';
     }
-    setTheme(theme);
-
-    
-    document.getElementById("theme-toggle").addEventListener("click", function() {
-        if (theme === "light") {
-            theme = "dark";
-        } else {
-            theme = "light";
-        }
-        setTheme(theme);
-    });
-
-
 
 </script>
-
-</header><main>
-<div class="single-container">
-    <div class="archive">
-        <h1 class="title is-1">Primeiras rotas (Splinter #2)</h1>
-        <div class="title subtitle heading is-6">
-            <div class="author-info columns is-vcentered">
-                <div class="column">
-                    <div class="columns is-vcentered is-mobile">
-                        
-                        <div class="column is-narrow">
-                            <img src="https://media.licdn.com/dms/image/D4D03AQEMHv9DrrU3gA/profile-displayphoto-shrink_800_800/0/1666728852457?e=1705536000&amp;v=beta&amp;t=oOOLIlKmJAlFBEFVSN_XHUAAjimmsXf8QpFyIdhw1yA" class="author-image">
-                        </div>
-                        
-                        <div class="column">
-                            <p>Leo Facundes</p>
-                            <p><time>March 28, 2024</time>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-categories-container">
-                    
-                </div>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Léo Diário (Alt + H)">Léo Diário</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
-        <div class="content article-content">
-            <div class="toc-container">
-                
-    <div class="post-toc">
-        
-            <aside>
-                <button id="tocButton" ><h4 id="contents" style="margin-left: 1vw;color:rgb(96, 134, 180);margin-bottom: 0;">CONTENTS</h4></button>
-                <div id="hide"><nav id="TableOfContents"></nav></div>
-            </aside>
-        
-    </div><script>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/L3onix" title="GitHub">
+                    <span>GitHub</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
     
-        let button = document.getElementById('tocButton');
-        let hide = document.getElementById("hide");
-        let contents=document.getElementById("contents");
-        button.addEventListener("click", function() {
-        if (hide.style.display!='block') {
-            hide.style.display='block'
-        } else {
-            hide.style.display='none'
-            contents.style.color='rgb(96, 134, 180)'
-        }
-        });
-    
+    <h1 class="post-title entry-hint-parent">
+      Primeiras rotas (Splinter #2)
+    </h1>
+    <div class="post-meta"><span title='2024-03-28 00:50:10 -0300 -03'>March 28, 2024</span>&nbsp;·&nbsp;<span>Leo Facundes</span>
 
-
-
-
-</script>
-            </div>
-            <p>Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo
+</div>
+  </header> 
+  <div class="post-content"><p>Continuando a saga de desenvolvimento do Splinter, hoje vou continuar seguinte aquele mesmo
 <a href="https://www.mongodb.com/developer/languages/php/laravel-mongodb-tutorial/">tutorial</a> da semana passada.
 Após a configuração do MongoDB eu posso criar a primeira rota. Como comentei no post passado
 vou utlizar o NoSQL para armazenar as questões de provas, pra isso eu crio o <em>model</em>
@@ -223,94 +165,91 @@ eram salvos no banco de dados. No final deu tudo certo.</p>
 serão armazenadas, com isso eu vou poder criar o form request das rotas de Question, e também
 vou poder definir o arquivo de resources para rotas.</p>
 
-        </div>
-    </div>
-    <a href="#" id="scrollToTopButton">
-        <svg t="1686753152588" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            p-id="3988" width="48" height="48">
-            <path
-                d="M518.5 360.3c-3.2-4.4-9.7-4.4-12.9 0l-178 246c-3.8 5.3 0 12.7 6.5 12.7H381c10.2 0 19.9-4.9 25.9-13.2L512 460.4l105.2 145.4c6 8.3 15.6 13.2 25.9 13.2H690c6.5 0 10.3-7.4 6.5-12.7l-178-246z"
-                p-id="3989" fill="#363636"></path>
-            <path
-                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64z m0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-                p-id="3990" fill="#363636"></path>
-        </svg>
-    </a><hr style="border-top: 1px solid #EEEEEE;">
-<div id="comment"></div>
-<script>
-    const getStoredTheme = () => localStorage.getItem("theme") === "dark" ? "dark" : "light";
 
-    const setGiscusTheme = () => {
-        const sendMessage = (message) => {
-            const iframe = document.querySelector('iframe.giscus-frame');
-            if (iframe) {
-                iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
-            }
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Léo Diário</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
         }
-        sendMessage({setConfig: {theme: getStoredTheme()}})
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const giscusAttributes = {
-            "src": "https://giscus.app/client.js",
-            "data-repo": "hotjuicew\/blog",
-            "data-repo-id": "R_kgDOHHQOuw",
-            "data-category": "Announcements",
-            "data-category-id": "DIC_kwDOHHQOu84CWCQ3",
-            "data-mapping": "og:title",
-            "data-reactions-enabled": "1",
-            "data-emit-metadata": "0",
-            "data-input-position": "bottom",
-            "data-theme": getStoredTheme(),
-            "data-lang": "en",
-            "data-loading": "lazy",
-            "crossorigin": "anonymous",
-        };
-
-        
-        const giscusScript = document.createElement("script");
-        Object.entries(giscusAttributes).forEach(
-            ([key, value]) => giscusScript.setAttribute(key, value));
-        document.getElementById("comment").appendChild(giscusScript);
-
-        
-        const themeToggle = document.querySelector(".theme-toggle");
-        if (themeToggle) {
-            themeToggle.addEventListener("click", setGiscusTheme);
-        }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
     });
 
 </script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-<div class="pp-container">
-        <section class="pre-and-post">
-            <div class="has-text-left">
-                
-                <p>Previous post</p>
-                <a href="http://localhost:1313/post/20240311-splinterpt1/">Ressuscitando velhos projetos (Splinter #1)</a>
-                
-            </div>
-            <div class="has-text-right">
-                
-                <p>Next post</p>
-                <a href="http://localhost:1313/post/20251212-nomes/">Nomes não importam!</a>
-                
-            </div>
-        </section>
-    </div>
+</script>
+</body>
 
-</div>
-
-        </main><footer class="footer">
-    <div class="content has-text-centered">
-    <span>&copy; 2025 <a href="http://localhost:1313/">Léo Diário</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
-        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
-    </span>
-    </div>
-  </footer></body>
 </html>
-
